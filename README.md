@@ -32,33 +32,34 @@ The x-http exchange can processes POST requests specific to the VHost it was dec
 - URL Format: http://host:port/routing-key
 - POST content-types: application/json or application/x-www-form-urlencoded.
 - POST Payload:
-  - application/json
-    - A JSON document the following nodes:
-      - body
-      - properties
-        - app_id
-        - content_encoding
-        - content_type
-        - correlation_id
-        - expires
-        - headers
-        - message_id
-        - priority
-        - reply-to
-        - timestamp
-        - type
-        - user_id
-    - POST query string with the following key/value pairs
-      - app_id
-      - body
-      - content_encoding
-      - content_type
-      - correlation_id
-      - expires
-      - headers
-      - message_id
-      - priority
-      - reply-to
-      - timestamp
-      - type
-      - user_id
+    - application/json
+        - A JSON document the following nodes:
+            - body
+            - properties
+                - app_id
+                - content_encoding
+                - content_type
+                - correlation_id
+                - expires
+                - headers
+                - message_id
+                - priority
+                - reply-to
+                - timestamp
+                - type
+                - user_id
+    - application/x-www-form-urlencoded
+        - POST query string with the following key/value pairs
+            - app_id
+            - body
+            - content_encoding
+            - content_type
+            - correlation_id
+            - expires
+            - headers
+            - message_id
+            - priority
+            - reply-to
+            - timestamp
+            - type
+            - user_id
