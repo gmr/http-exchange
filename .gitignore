@@ -1,0 +1,6 @@
+.idea
+build
+dist
+ebin
+*.beam
+*.iml

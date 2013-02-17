@@ -1,0 +1,7 @@
+{application, rabbit_http_exchange,
+  [{description, "RabbitMQ HTTP Publishing Exchange Plugin"},
+    {vsn, "%%VSN%%"},
+    {modules, [rabbit_http_exchange_app, rabbit_http_exchange, rabbit_http_exchange_publish]},
+    {registered, []},
+    {mod, {rabbit_http_exchange_app, []}},
+    {applications, [kernel, stdlib, rabbit, cowboy]}]}.
